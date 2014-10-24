@@ -15,6 +15,12 @@ def pick_engineer():
         engineers = open('engineers.txt').read().splitlines()
     return random.choice(engineers)
 
+def pick_featureX(engineer):
+   """
+   print CAPTILALIZE egineer name
+   """
+   return engineer.uppercase()
+ 
 if __name__ == '__main__':
     
     print(pick_engineer())
